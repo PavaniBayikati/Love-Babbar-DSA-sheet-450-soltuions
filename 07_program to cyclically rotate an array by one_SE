@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main 
+{
+    public static void main (String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of the Arra;-");
+        int size=sc.nextInt();
+        System.out.println("Enter the Array elements:-");
+        int[] array=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            array[i]=sc.nextInt();
+        }
+        System.out.print("The original Array elements are:-");
+        for(int i=0;i<size;i++)
+        {
+            System.out.print(array[i] + " ");
+        }
+        int lastelement=array[size-1];
+        for (int i = size - 1; i > 0; i--) {
+            array[i] = array[i - 1];
+        }
+        array[0]=lastelement;
+        System.out.print("The array after cyclic rotate by one is:-");
+        for(int i=0;i<size;i++)
+        {
+            System.out.print(array[i] + " ");
+        }
+    }
+}
