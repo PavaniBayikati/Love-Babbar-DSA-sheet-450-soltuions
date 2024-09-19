@@ -1,6 +1,7 @@
 //Minimum and maximum element in the array DSA sheet 
 import java.util.*;
 public class Main 
+
 {
     public static int minf(int[] arr)
     {
