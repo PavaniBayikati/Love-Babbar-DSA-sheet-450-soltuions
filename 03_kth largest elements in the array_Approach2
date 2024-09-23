@@ -4,6 +4,7 @@ class Solution {
     
         for(int num:nums){
             heap.add(num);
+
             if(heap.size()>k) {
                 heap.poll();
             }
