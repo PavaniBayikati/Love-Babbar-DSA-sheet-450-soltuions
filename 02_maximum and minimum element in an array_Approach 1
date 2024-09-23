@@ -6,6 +6,7 @@ public class Main
     public static int minf(int[] arr)
     {
         int min=Integer.MAX_VALUE;
+
         for(int value : arr)
         {
             if(value<min)
