@@ -8,6 +8,7 @@ public class Main
 
 
 
+
         int size = sc.nextInt();//array
 
 
